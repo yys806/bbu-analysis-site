@@ -107,15 +107,13 @@ body {
 }
 
 .side-panel {
-  position: fixed;
-  top: 16px;
-  left: clamp(24px, 6vw, 80px);
-  width: min(300px, calc(100vw - 48px));
-  height: calc(100vh - 32px);
-  z-index: 10;
+  position: sticky;
+  top: 12px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: calc(100vh - 24px);
   padding-right: 4px;
 }
 
@@ -197,7 +195,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 36px;
-  margin-left: calc(min(300px, calc(100vw - 48px)) + clamp(20px, 4vw, 48px));
 }
 
 .intro {
@@ -414,21 +411,13 @@ body {
   }
 
   .side-panel {
-    position: fixed;
-    top: 8px;
-    left: 8px;
-    width: 230px;
-    height: calc(100vh - 16px);
+    position: static;
+    height: auto;
     padding-right: 0;
-    background: transparent;
   }
 
   .intro {
     grid-template-columns: 1fr;
-  }
-
-  .content {
-    margin-left: 250px;
   }
 }
 
