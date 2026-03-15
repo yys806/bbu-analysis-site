@@ -8,6 +8,7 @@
   --card: #ffffff;
   --line: rgba(29, 31, 28, 0.12);
   --shadow: 0 24px 60px rgba(22, 25, 22, 0.12);
+  --shadow-soft: 0 12px 26px rgba(22, 25, 22, 0.08);
   --radius: 18px;
 }
 
@@ -23,6 +24,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  line-height: 1.5;
 }
 
 .ambient {
@@ -37,7 +39,7 @@ body {
 }
 
 .site-header {
-  padding: 40px clamp(24px, 6vw, 80px) 10px;
+  padding: 44px clamp(24px, 6vw, 80px) 14px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -96,6 +98,7 @@ body {
   border-radius: 999px;
   font-size: 0.9rem;
   background: rgba(29, 31, 28, 0.08);
+  border: 1px solid rgba(29, 31, 28, 0.09);
 }
 
 .layout {
@@ -123,6 +126,7 @@ body {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
+  backdrop-filter: blur(3px);
 }
 
 .panel-block h2,
@@ -150,6 +154,13 @@ body {
   border: 1px solid var(--line);
   font-size: 1rem;
   font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: rgba(42, 93, 74, 0.45);
+  box-shadow: 0 0 0 3px rgba(42, 93, 74, 0.16);
 }
 
 .nav-root {
@@ -161,11 +172,26 @@ body {
   padding-right: 2px;
 }
 
+.nav-root::-webkit-scrollbar {
+  width: 8px;
+}
+
+.nav-root::-webkit-scrollbar-thumb {
+  background: rgba(29, 31, 28, 0.22);
+  border-radius: 999px;
+}
+
 .nav-series {
   padding: 14px 16px;
   border-radius: 16px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.8);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.nav-series:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-soft);
 }
 
 .nav-series h4 {
@@ -189,6 +215,12 @@ body {
   text-decoration: none;
   color: var(--accent);
   font-size: 0.9rem;
+  border-radius: 8px;
+  padding: 2px 6px;
+}
+
+.nav-series a:hover {
+  background: rgba(42, 93, 74, 0.1);
 }
 
 .content {
@@ -286,6 +318,12 @@ body {
   border: 1px solid var(--line);
   margin-bottom: 16px;
   background: linear-gradient(135deg, rgba(60, 90, 76, 0.06), rgba(163, 109, 44, 0.05));
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
 }
 
 .episode-card header {
@@ -298,7 +336,7 @@ body {
 
 .episode-card h5 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .episode-meta {
@@ -332,6 +370,8 @@ body {
   background: #2a5d4a;
   min-width: 180px;
   cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.16s ease, filter 0.16s ease;
 }
 
 .episode-meta a.tg-button {
@@ -341,6 +381,8 @@ body {
 .episode-meta a.tg-button:hover {
   color: #fff;
   text-decoration: none;
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
 .tg-button[disabled] {
@@ -403,6 +445,12 @@ body {
   border-radius: 999px;
   font-size: 0.8rem;
   cursor: pointer;
+  transition: border-color 0.16s ease, transform 0.16s ease;
+}
+
+.copy-link:hover {
+  border-color: rgba(42, 93, 74, 0.45);
+  transform: translateY(-1px);
 }
 
 .site-footer {
