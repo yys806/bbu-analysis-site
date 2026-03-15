@@ -80,6 +80,22 @@ function buildTelegramEpisodeMap(payload) {
   return map;
 }
 
+async function fetchTvMazeRatingMap(seriesId, showId) {
+  const response = await fetch(`https://api.tvmaze.com/shows/${showId}/episodes`);
+  if (!response.ok) {
+    return new Map();
+  }
+  const episodes = await response.json();
+  const map = new Map();
+
+  episodes.forEach((ep) => {
+    const key = `${seriesId}-${ep.season}-${ep.number}`;
+    map.set(key, ep?.rating?.average ?? null);
+  });
+
+  return map;
+}
+
 function groupBySeason(episodes) {
   const map = new Map();
   episodes.forEach((ep) => {
@@ -172,6 +188,7 @@ function renderSeries(seriesBlocks, telegramEpisodeMap) {
         const summaryEn = ep.summaryEn || "No English synopsis available.";
         const tgKey = `${series.id}-${ep.season}-${ep.number}`;
         const tgUrl = telegramEpisodeMap.get(tgKey) || "";
+        const ratingText = ep.rating == null ? "暂无" : ep.rating.toFixed(1);
         const tgButton = tgUrl
           ? `<a class="tg-button" href="${tgUrl}" target="_blank" rel="noreferrer">跳转 Telegram 视频</a>`
           : `<button class="tg-button" type="button" disabled>暂无 Telegram 视频</button>`;
@@ -186,6 +203,7 @@ function renderSeries(seriesBlocks, telegramEpisodeMap) {
           </header>
 
           <div class="episode-meta">
+            <span class="rating-pill">TVMaze评分：${ratingText}</span>
             <span>${tgButton}</span>
           </div>
 
@@ -278,10 +296,18 @@ async function main() {
       loadJson("telegram-resources.json").catch(() => ({ items: [] })),
     ]);
     const telegramEpisodeMap = buildTelegramEpisodeMap(telegramPayload);
+    const [bbRatingMap, bcsRatingMap] = await Promise.all([
+      fetchTvMazeRatingMap("bb", 169),
+      fetchTvMazeRatingMap("bcs", 618),
+    ]);
+    const ratingMap = new Map([...bbRatingMap, ...bcsRatingMap]);
 
     const seriesBlocks = seriesConfig.map((series) => {
       const item = episodePayload[series.id];
-      const episodes = item?.episodes || [];
+      const episodes = (item?.episodes || []).map((ep) => ({
+        ...ep,
+        rating: ratingMap.get(`${series.id}-${ep.season}-${ep.number}`) ?? null,
+      }));
       return {
         ...series,
         seasons: groupBySeason(episodes),
