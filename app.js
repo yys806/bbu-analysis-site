@@ -6,6 +6,7 @@ const seriesConfig = [
 const navRoot = document.getElementById("nav-root");
 const seriesRoot = document.getElementById("series-root");
 const searchInput = document.getElementById("episode-search");
+const telegramRoot = document.getElementById("telegram-root");
 
 function pad(num) {
   return String(num).padStart(2, "0");
@@ -146,6 +147,50 @@ function renderSeries(seriesBlocks) {
   });
 }
 
+function renderTelegramResources(payload) {
+  const items = Array.isArray(payload?.items) ? payload.items : [];
+
+  if (!items.length) {
+    telegramRoot.innerHTML = `
+      <section class="resource-board">
+        <h3>Telegram 频道资源</h3>
+        <div class="resource-meta">尚未导入资源。先在 Telegram Desktop 导出频道 JSON，然后运行导入脚本。</div>
+      </section>
+    `;
+    return;
+  }
+
+  const topItems = items.slice(0, 80);
+  const rows = topItems
+    .map((item) => {
+      const links = [];
+      if (item.file) {
+        links.push(`<span>附件：${item.file}</span>`);
+      }
+      const mappedLinks = (item.links || [])
+        .slice(0, 4)
+        .map((url, idx) => `<a href="${url}" target="_blank" rel="noreferrer">链接 ${idx + 1}</a>`)
+        .join("");
+      return `
+        <article class="resource-item">
+          <strong>${item.channel || "Telegram"} · ${item.category || "link"}</strong>
+          <p>${item.text || "(无文本，仅附件/链接)"}</p>
+          <p>${item.date || "未知时间"}</p>
+          <div class="resource-links">${links.join("")}${mappedLinks}</div>
+        </article>
+      `;
+    })
+    .join("");
+
+  telegramRoot.innerHTML = `
+    <section class="resource-board">
+      <h3>Telegram 频道资源</h3>
+      <div class="resource-meta">来源：${payload.channel || "Telegram 导出"} · 共 ${items.length} 条（展示前 ${topItems.length} 条）</div>
+      <div class="resource-list">${rows}</div>
+    </section>
+  `;
+}
+
 function bindCopyLinks() {
   document.querySelectorAll(".copy-link").forEach((button) => {
     button.addEventListener("click", () => {
@@ -196,16 +241,23 @@ function renderError(message) {
   `;
 }
 
+async function loadJson(path) {
+  const response = await fetch(path);
+  if (!response.ok) {
+    throw new Error(`${path} 加载失败`);
+  }
+  return response.json();
+}
+
 async function main() {
   try {
-    const response = await fetch("episodes-data.json");
-    if (!response.ok) {
-      throw new Error("episodes-data.json 加载失败");
-    }
-    const payload = await response.json();
+    const [episodePayload, telegramPayload] = await Promise.all([
+      loadJson("episodes-data.json"),
+      loadJson("telegram-resources.json").catch(() => ({ items: [] })),
+    ]);
 
     const seriesBlocks = seriesConfig.map((series) => {
-      const item = payload[series.id];
+      const item = episodePayload[series.id];
       const episodes = item?.episodes || [];
       return {
         ...series,
@@ -216,6 +268,7 @@ async function main() {
 
     renderCounts(seriesBlocks);
     renderNav(seriesBlocks);
+    renderTelegramResources(telegramPayload);
     renderSeries(seriesBlocks);
     bindCopyLinks();
     bindSearch();

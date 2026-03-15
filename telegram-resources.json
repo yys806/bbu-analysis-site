@@ -1,0 +1,6 @@
+{
+  "generatedAt": "2026-03-15T10:39:59.261Z",
+  "source": "telegram-export",
+  "note": "未提供 Telegram 导出路径。请使用 --input 指定 result.json 或导出目录。",
+  "items": []
+}
