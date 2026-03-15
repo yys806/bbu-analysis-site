@@ -107,12 +107,16 @@ body {
 }
 
 .side-panel {
-  position: relative;
-  top: auto;
-  align-self: start;
+  position: fixed;
+  top: 16px;
+  left: clamp(24px, 6vw, 80px);
+  width: min(300px, calc(100vw - 48px));
+  height: calc(100vh - 32px);
+  z-index: 10;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding-right: 4px;
 }
 
 .panel-block {
@@ -153,6 +157,10 @@ body {
 .nav-root {
   display: grid;
   gap: 16px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 2px;
 }
 
 .nav-series {
@@ -189,6 +197,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 36px;
+  margin-left: calc(min(300px, calc(100vw - 48px)) + clamp(20px, 4vw, 48px));
 }
 
 .intro {
@@ -405,15 +414,45 @@ body {
   }
 
   .side-panel {
-    position: static;
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    width: 230px;
+    height: calc(100vh - 16px);
+    padding-right: 0;
+    background: transparent;
   }
 
   .intro {
     grid-template-columns: 1fr;
   }
+
+  .content {
+    margin-left: 250px;
+  }
 }
 
 @media (max-width: 600px) {
+  .layout {
+    display: block;
+    padding: 16px;
+  }
+
+  .side-panel {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .nav-root {
+    max-height: 240px;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
   .brand {
     flex-direction: column;
     align-items: flex-start;
