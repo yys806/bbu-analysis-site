@@ -106,7 +106,23 @@ function isRelevant(itemText, fileName, urls) {
   return showKeywords.some((word) => blob.includes(word));
 }
 
-function toResourceItem(message, channelName) {
+function buildTelegramMessageUrl(chatMeta, messageId) {
+  if (!messageId) {
+    return "";
+  }
+
+  if (chatMeta.username) {
+    return `https://t.me/${chatMeta.username}/${messageId}`;
+  }
+
+  if (chatMeta.chatId) {
+    return `https://t.me/c/${chatMeta.chatId}/${messageId}`;
+  }
+
+  return "";
+}
+
+function toResourceItem(message, chatMeta) {
   const text = extractText(message.text);
   const urls = extractLinks(message.text);
   const fileName = message.file || "";
@@ -119,12 +135,13 @@ function toResourceItem(message, channelName) {
   return {
     id: message.id,
     date: message.date || "",
-    channel: channelName || message.from || "未知频道",
+    channel: chatMeta.channel || message.from || "未知频道",
     text,
     file: fileName,
     mediaType: message.media_type || "",
     links: urls,
     category: classifyResource(text, fileName, urls),
+    telegramUrl: buildTelegramMessageUrl(chatMeta, message.id),
   };
 }
 
@@ -134,6 +151,8 @@ function collectMessageBundles(parsed) {
   if (Array.isArray(parsed.messages)) {
     bundles.push({
       channel: parsed.name || "Telegram 导出",
+      chatId: parsed.id || 0,
+      username: parsed.username || "",
       messages: parsed.messages,
     });
   }
@@ -144,6 +163,8 @@ function collectMessageBundles(parsed) {
       if (Array.isArray(chat?.messages)) {
         bundles.push({
           channel: chat.name || "频道/群组",
+          chatId: chat.id || 0,
+          username: chat.username || "",
           messages: chat.messages,
         });
       }
@@ -213,7 +234,13 @@ async function main() {
       .flatMap((bundle) =>
         bundle.messages
           .filter((msg) => msg && msg.type === "message")
-          .map((msg) => toResourceItem(msg, bundle.channel))
+          .map((msg) =>
+            toResourceItem(msg, {
+              channel: bundle.channel,
+              chatId: bundle.chatId,
+              username: bundle.username,
+            })
+          )
           .filter(Boolean)
       )
   );
@@ -222,6 +249,8 @@ async function main() {
     generatedAt: new Date().toISOString(),
     source: filePath,
     channel: parsed?.name || "Telegram 导出",
+    chatId: parsed?.id || 0,
+    username: parsed?.username || "",
     total: resources.length,
     items: resources,
   };

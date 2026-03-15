@@ -15,6 +15,71 @@ function episodeId(seriesId, season, episode) {
   return `${seriesId}-s${pad(season)}e${pad(episode)}`;
 }
 
+function parseChineseNumber(input) {
+  const s = (input || "").trim();
+  if (/^\d+$/.test(s)) {
+    return Number.parseInt(s, 10);
+  }
+  const map = {
+    零: 0,
+    一: 1,
+    二: 2,
+    两: 2,
+    三: 3,
+    四: 4,
+    五: 5,
+    六: 6,
+    七: 7,
+    八: 8,
+    九: 9,
+  };
+  if (s === "十") {
+    return 10;
+  }
+  if (s.startsWith("十")) {
+    return 10 + (map[s.slice(1)] || 0);
+  }
+  if (s.endsWith("十")) {
+    return (map[s[0]] || 0) * 10;
+  }
+  if (s.includes("十")) {
+    const [a, b] = s.split("十");
+    return (map[a] || 0) * 10 + (map[b] || 0);
+  }
+  return map[s] || 0;
+}
+
+function buildTelegramEpisodeMap(payload) {
+  const map = new Map();
+  const items = Array.isArray(payload?.items) ? payload.items : [];
+
+  items.forEach((item) => {
+    const text = item.text || "";
+    const series = text.includes("风骚律师") ? "bcs" : text.includes("绝命毒师") ? "bb" : "";
+    if (!series) {
+      return;
+    }
+
+    const m = text.match(/第\s*([0-9一二三四五六七八九十两]+)\s*季\s*第\s*([0-9一二三四五六七八九十两]+)\s*集/);
+    if (!m) {
+      return;
+    }
+
+    const season = parseChineseNumber(m[1]);
+    const episode = parseChineseNumber(m[2]);
+    if (!season || !episode) {
+      return;
+    }
+
+    const key = `${series}-${season}-${episode}`;
+    if (!map.has(key) && item.telegramUrl) {
+      map.set(key, item.telegramUrl);
+    }
+  });
+
+  return map;
+}
+
 function groupBySeason(episodes) {
   const map = new Map();
   episodes.forEach((ep) => {
@@ -73,7 +138,7 @@ function renderNav(seriesBlocks) {
   });
 }
 
-function renderSeries(seriesBlocks) {
+function renderSeries(seriesBlocks, telegramEpisodeMap) {
   seriesRoot.innerHTML = "";
 
   seriesBlocks.forEach((series) => {
@@ -105,6 +170,11 @@ function renderSeries(seriesBlocks) {
 
         const summaryZh = ep.summaryZh || "暂无中文简介";
         const summaryEn = ep.summaryEn || "No English synopsis available.";
+        const tgKey = `${series.id}-${ep.season}-${ep.number}`;
+        const tgUrl = telegramEpisodeMap.get(tgKey) || "";
+        const tgButton = tgUrl
+          ? `<a class="tg-button" href="${tgUrl}" target="_blank" rel="noreferrer">跳转 Telegram 视频</a>`
+          : `<button class="tg-button" type="button" disabled>暂无 Telegram 视频</button>`;
 
         card.innerHTML = `
           <header>
@@ -116,10 +186,7 @@ function renderSeries(seriesBlocks) {
           </header>
 
           <div class="episode-meta">
-            <span>剧集页：<a href="${ep.detailUrl}" target="_blank" rel="noreferrer">TVMaze</a></span>
-            <span>百科：<a href="https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(ep.title + " " + series.subtitle)}" target="_blank" rel="noreferrer">Wikipedia 搜索</a></span>
-            <span>播放源：<a href="${ep.playback.justwatch}" target="_blank" rel="noreferrer">JustWatch</a></span>
-            <span>备用播放：<a href="${ep.playback.youtube}" target="_blank" rel="noreferrer">YouTube 搜索</a></span>
+            <span>${tgButton}</span>
           </div>
 
           <div class="episode-shot">${imageHtml}</div>
@@ -206,7 +273,11 @@ async function loadJson(path) {
 
 async function main() {
   try {
-    const episodePayload = await loadJson("episodes-data.json");
+    const [episodePayload, telegramPayload] = await Promise.all([
+      loadJson("episodes-data.json"),
+      loadJson("telegram-resources.json").catch(() => ({ items: [] })),
+    ]);
+    const telegramEpisodeMap = buildTelegramEpisodeMap(telegramPayload);
 
     const seriesBlocks = seriesConfig.map((series) => {
       const item = episodePayload[series.id];
@@ -220,7 +291,7 @@ async function main() {
 
     renderCounts(seriesBlocks);
     renderNav(seriesBlocks);
-    renderSeries(seriesBlocks);
+    renderSeries(seriesBlocks, telegramEpisodeMap);
     bindCopyLinks();
     bindSearch();
     bindToTop();

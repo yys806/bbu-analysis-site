@@ -1,548 +1,593 @@
 {
-  "generatedAt": "2026-03-15T10:55:14.172Z",
-  "source": "C:\\Users\\Lenovo\\Downloads\\Telegram Desktop\\DataExport_2026-03-15\\result.json",
-  "channel": "Telegram 导出",
-  "total": 132,
+  "generatedAt": "2026-03-15T11:17:21.031Z",
+  "source": "C:\\Users\\Lenovo\\Downloads\\Telegram Desktop\\ChatExport_2026-03-15\\result.json",
+  "channel": "电视剧",
+  "chatId": 3469051981,
+  "username": "",
+  "total": 131,
   "items": [
-    {
-      "id": 8,
-      "date": "2026-03-08T03:31:33",
-      "channel": "电影",
-      "text": "续命之徒：绝命毒师电影 El Camino: A Breaking Bad Movie (2019) \n\n主演: 亚伦·保尔 / 乔纳森·班克斯 / 马特·琼斯 / 查尔斯·贝克 / 托德·特里 / 朱莉·珀尔 / 格雷戈里·史蒂文·索里兹 / 拉里·哈金 / 杰西·普莱蒙 / 汤姆·鲍尔 / 格洛里亚·桑多瓦尔 / 泰丝·哈珀 / 迈克尔·博夫舍维尔 / 丹妮尔·托德斯科 / 斯科特·麦克阿瑟 / 斯科特·谢帕德 / 玛拉·吉布斯 / 罗伯特·福斯特 / 布兰登·萨克斯顿 / 戴维·马特 / 凯文·兰金 / 布莱恩·克兰斯顿 / 约翰尼·奥蒂斯 / 克里斯滕·里特\n类型: 剧情 / 惊悚 / 犯罪\n制片国家/地区: 美国\n语言: 英语\n上映日期: 2019-10-11(美国)\n片长: 122分钟\n又名: 绝命毒师电影：续命之徒 / 格林布莱尔 / Greenbriar\n\n续命之徒：绝命毒师电影的剧情简介 · · · · · ·\nNetflix 电视内容《续命之徒：绝命毒师电影》回归，主角杰西·平克曼（艾美奖得主亚伦·保尔饰演）再次与粉丝见面。杰西戏剧性地逃出囚禁后，他必须接受自己的过去，才有可能创造未来。这部扣人心弦的惊悚片由《绝命毒师》的创剧人文斯·吉里根编写和执导。该电影由马克·约翰逊、梅利莎·伯恩斯坦、查尔斯·纽沃斯、黛安娜·默瑟和亚伦·保尔以及 Sony Pictures Television 联合制作。\n\n #绝命毒师电影   #续命之徒   #惊悚   #犯罪",
-      "file": "(File not included. Change data exporting settings to download.)",
-      "mediaType": "video_file",
-      "links": [],
-      "category": "link"
-    },
     {
       "id": 134,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第13集【完】",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/134"
     },
     {
       "id": 133,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第12集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/133"
     },
     {
       "id": 132,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第11集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/132"
     },
     {
       "id": 131,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第10集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/131"
     },
     {
       "id": 130,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第9集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/130"
     },
     {
       "id": 129,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第8集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/129"
     },
     {
       "id": 128,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第7集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/128"
     },
     {
       "id": 127,
       "date": "2026-03-08T03:10:56",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第6集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/127"
     },
     {
       "id": 126,
       "date": "2026-03-08T03:10:55",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第5集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/126"
     },
     {
       "id": 125,
       "date": "2026-03-08T03:10:55",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第4集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/125"
     },
     {
       "id": 124,
       "date": "2026-03-08T03:10:55",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第3集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/124"
     },
     {
       "id": 123,
       "date": "2026-03-08T03:10:55",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第2集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/123"
     },
     {
       "id": 122,
       "date": "2026-03-08T03:10:55",
       "channel": "电视剧",
       "text": "#风骚律师  第六季 第1集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/122"
     },
     {
       "id": 121,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第10集【完】",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/121"
     },
     {
       "id": 120,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第9集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/120"
     },
     {
       "id": 119,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第8集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/119"
     },
     {
       "id": 118,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第7集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/118"
     },
     {
       "id": 117,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第6集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/117"
     },
     {
       "id": 116,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第5集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/116"
     },
     {
       "id": 115,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第4集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/115"
     },
     {
       "id": 114,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第3集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/114"
     },
     {
       "id": 113,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第2集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/113"
     },
     {
       "id": 112,
       "date": "2026-03-08T03:10:24",
       "channel": "电视剧",
       "text": "#风骚律师  第五季 第1集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/112"
     },
     {
       "id": 111,
       "date": "2026-03-08T03:10:05",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第10集【完】",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/111"
     },
     {
       "id": 110,
       "date": "2026-03-08T03:10:05",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第9集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/110"
     },
     {
       "id": 109,
       "date": "2026-03-08T03:10:05",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第8集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/109"
     },
     {
       "id": 108,
       "date": "2026-03-08T03:10:05",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第7集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/108"
     },
     {
       "id": 107,
       "date": "2026-03-08T03:10:05",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第6集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/107"
     },
     {
       "id": 106,
       "date": "2026-03-08T03:10:04",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第5集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/106"
     },
     {
       "id": 105,
       "date": "2026-03-08T03:10:04",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第4集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/105"
     },
     {
       "id": 104,
       "date": "2026-03-08T03:10:04",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第3集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/104"
     },
     {
       "id": 103,
       "date": "2026-03-08T03:10:04",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第2集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/103"
     },
     {
       "id": 102,
       "date": "2026-03-08T03:10:04",
       "channel": "电视剧",
       "text": "#风骚律师  第四季 第1集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/102"
     },
     {
       "id": 101,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第10集【完】",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/101"
     },
     {
       "id": 100,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第9集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/100"
     },
     {
       "id": 99,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第8集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/99"
     },
     {
       "id": 98,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第7集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/98"
     },
     {
       "id": 97,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第6集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/97"
     },
     {
       "id": 96,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第5集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/96"
     },
     {
       "id": 95,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第4集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/95"
     },
     {
       "id": 94,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第3集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/94"
     },
     {
       "id": 93,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第2集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/93"
     },
     {
       "id": 92,
       "date": "2026-03-08T03:09:40",
       "channel": "电视剧",
       "text": "#风骚律师  第三季 第1集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/92"
     },
     {
       "id": 91,
       "date": "2026-03-08T03:09:17",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第10集【完】",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/91"
     },
     {
       "id": 90,
       "date": "2026-03-08T03:09:11",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第9集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/90"
     },
     {
       "id": 89,
       "date": "2026-03-08T03:09:05",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第8集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/89"
     },
     {
       "id": 88,
       "date": "2026-03-08T03:09:01",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第7集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/88"
     },
     {
       "id": 87,
       "date": "2026-03-08T03:08:56",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第6集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/87"
     },
     {
       "id": 86,
       "date": "2026-03-08T03:08:51",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第5集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/86"
     },
     {
       "id": 85,
       "date": "2026-03-08T03:08:45",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第4集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/85"
     },
     {
       "id": 84,
       "date": "2026-03-08T03:08:40",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第3集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/84"
     },
     {
       "id": 83,
       "date": "2026-03-08T03:08:34",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第2集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/83"
     },
     {
       "id": 82,
       "date": "2026-03-08T03:08:21",
       "channel": "电视剧",
       "text": "#风骚律师  第二季 第1集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/82"
     },
     {
       "id": 81,
@@ -552,107 +597,118 @@
       "file": "",
       "mediaType": "",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/81"
     },
     {
       "id": 80,
       "date": "2026-03-08T03:06:30",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第10集【完】",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/80"
     },
     {
       "id": 79,
       "date": "2026-03-08T03:06:25",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第9集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/79"
     },
     {
       "id": 78,
       "date": "2026-03-08T03:06:20",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第8集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/78"
     },
     {
       "id": 77,
       "date": "2026-03-08T03:06:15",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第7集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/77"
     },
     {
       "id": 76,
       "date": "2026-03-08T03:06:10",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第6集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/76"
     },
     {
       "id": 75,
       "date": "2026-03-08T03:06:05",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第5集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/75"
     },
     {
       "id": 74,
       "date": "2026-03-08T03:05:54",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第4集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/74"
     },
     {
       "id": 73,
       "date": "2026-03-08T03:05:48",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第3集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/73"
     },
     {
       "id": 72,
       "date": "2026-03-08T03:05:43",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第2集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/72"
     },
     {
       "id": 71,
       "date": "2026-03-08T03:05:36",
       "channel": "电视剧",
       "text": "#风骚律师  第一季 第1集",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/71"
     },
     {
       "id": 68,
@@ -662,14 +718,15 @@
       "file": "",
       "mediaType": "",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/68"
     },
     {
       "id": 67,
       "date": "2026-03-08T02:43:29",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十六集16  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧    综艺    电影    动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -680,14 +737,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/67"
     },
     {
       "id": 66,
       "date": "2026-03-08T02:43:23",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十五集15  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧    综艺    电影    动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -698,14 +756,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/66"
     },
     {
       "id": 65,
       "date": "2026-03-08T02:43:08",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十四集14  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧    综艺    电影    动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -716,14 +775,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/65"
     },
     {
       "id": 64,
       "date": "2026-03-08T02:43:00",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十三集13  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧    综艺    电影    动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -734,14 +794,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/64"
     },
     {
       "id": 63,
       "date": "2026-03-08T02:42:52",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十二集12  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧    综艺    电影    动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -752,14 +813,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/63"
     },
     {
       "id": 62,
       "date": "2026-03-08T02:42:46",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十一集11  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧    综艺    电影    动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -770,14 +832,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/62"
     },
     {
       "id": 61,
       "date": "2026-03-08T02:42:18",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第十集10  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -788,14 +851,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/61"
     },
     {
       "id": 60,
       "date": "2026-03-08T02:42:13",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第九集09  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -806,14 +870,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/60"
     },
     {
       "id": 59,
       "date": "2026-03-08T02:42:07",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第八集08  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -824,14 +889,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/59"
     },
     {
       "id": 58,
       "date": "2026-03-08T02:42:02",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第七集07  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -842,14 +908,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/58"
     },
     {
       "id": 57,
       "date": "2026-03-08T02:41:55",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第六集06  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -860,14 +927,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/57"
     },
     {
       "id": 56,
       "date": "2026-03-08T02:41:50",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第五集05  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -878,14 +946,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/56"
     },
     {
       "id": 55,
       "date": "2026-03-08T02:41:45",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第四集04  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -896,14 +965,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/55"
     },
     {
       "id": 54,
       "date": "2026-03-08T02:41:40",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第三集03  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -914,14 +984,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/54"
     },
     {
       "id": 53,
       "date": "2026-03-08T02:41:35",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第二集02  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -932,14 +1003,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/53"
     },
     {
       "id": 52,
       "date": "2026-03-08T02:41:30",
       "channel": "电视剧",
       "text": "《绝命毒师第五季》第一集01  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -950,7 +1022,8 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/52"
     },
     {
       "id": 51,
@@ -960,14 +1033,15 @@
       "file": "",
       "mediaType": "",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/51"
     },
     {
       "id": 50,
       "date": "2026-03-08T02:40:29",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第十三集13  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -978,14 +1052,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/50"
     },
     {
       "id": 49,
       "date": "2026-03-08T02:40:24",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第十二集12  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -996,14 +1071,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/49"
     },
     {
       "id": 48,
       "date": "2026-03-08T02:40:18",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第十一集11  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1014,14 +1090,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/48"
     },
     {
       "id": 47,
       "date": "2026-03-08T02:40:13",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第十集10  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1032,14 +1109,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/47"
     },
     {
       "id": 46,
       "date": "2026-03-08T02:40:08",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第九集09  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1050,14 +1128,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/46"
     },
     {
       "id": 45,
       "date": "2026-03-08T02:40:03",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第八集08  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1068,14 +1147,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/45"
     },
     {
       "id": 44,
       "date": "2026-03-08T02:39:57",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第七集07  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1086,14 +1166,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/44"
     },
     {
       "id": 43,
       "date": "2026-03-08T02:39:50",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第六集06  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1104,14 +1185,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/43"
     },
     {
       "id": 42,
       "date": "2026-03-08T02:39:45",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第五集05  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1122,14 +1204,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/42"
     },
     {
       "id": 41,
       "date": "2026-03-08T02:39:39",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第四集04  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1140,14 +1223,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/41"
     },
     {
       "id": 40,
       "date": "2026-03-08T02:39:35",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第三集03  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1158,14 +1242,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/40"
     },
     {
       "id": 39,
       "date": "2026-03-08T02:39:04",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第二集02  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1176,14 +1261,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/39"
     },
     {
       "id": 38,
       "date": "2026-03-08T02:38:46",
       "channel": "电视剧",
       "text": "《绝命毒师第四季》第一集01  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1194,7 +1280,8 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/38"
     },
     {
       "id": 37,
@@ -1204,14 +1291,15 @@
       "file": "",
       "mediaType": "",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/37"
     },
     {
       "id": 36,
       "date": "2026-03-08T02:37:33",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第十三集13  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1222,14 +1310,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/36"
     },
     {
       "id": 35,
       "date": "2026-03-08T02:37:28",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第十二集12  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1240,14 +1329,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/35"
     },
     {
       "id": 34,
       "date": "2026-03-08T02:37:15",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第十一集11  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1258,14 +1348,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/34"
     },
     {
       "id": 33,
       "date": "2026-03-08T02:37:10",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第十集10  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1276,14 +1367,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/33"
     },
     {
       "id": 32,
       "date": "2026-03-08T02:37:06",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第九集09  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1294,14 +1386,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/32"
     },
     {
       "id": 31,
       "date": "2026-03-08T02:37:01",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第八集08  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1312,14 +1405,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/31"
     },
     {
       "id": 30,
       "date": "2026-03-08T02:36:57",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第七集07  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1330,14 +1424,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/30"
     },
     {
       "id": 29,
       "date": "2026-03-08T02:36:52",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第六集06  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1348,14 +1443,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/29"
     },
     {
       "id": 28,
       "date": "2026-03-08T02:36:47",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第五集05  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1366,14 +1462,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/28"
     },
     {
       "id": 27,
       "date": "2026-03-08T02:36:42",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第四集04  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1384,14 +1481,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/27"
     },
     {
       "id": 26,
       "date": "2026-03-08T02:36:37",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第三集03  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1402,14 +1500,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/26"
     },
     {
       "id": 25,
       "date": "2026-03-08T02:36:33",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第二集02  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1420,14 +1519,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/25"
     },
     {
       "id": 24,
       "date": "2026-03-08T02:36:27",
       "channel": "电视剧",
       "text": "《绝命毒师第三季》第一集01  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1438,7 +1538,8 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/24"
     },
     {
       "id": 23,
@@ -1448,14 +1549,15 @@
       "file": "",
       "mediaType": "",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/23"
     },
     {
       "id": 22,
       "date": "2026-03-08T02:33:57",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第十三集13  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1466,14 +1568,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/22"
     },
     {
       "id": 21,
       "date": "2026-03-08T02:33:53",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第十二集12  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1484,14 +1587,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/21"
     },
     {
       "id": 20,
       "date": "2026-03-08T02:33:48",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第十一集11  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1502,14 +1606,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/20"
     },
     {
       "id": 19,
       "date": "2026-03-08T02:33:42",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第十集10  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1520,14 +1625,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/19"
     },
     {
       "id": 18,
       "date": "2026-03-08T02:33:38",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第九集09  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1538,14 +1644,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/18"
     },
     {
       "id": 17,
       "date": "2026-03-08T02:33:30",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第八集08  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1556,14 +1663,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/17"
     },
     {
       "id": 16,
       "date": "2026-03-08T02:32:57",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第七集07  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1574,14 +1682,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/16"
     },
     {
       "id": 15,
       "date": "2026-03-08T02:32:52",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第六集06  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1592,14 +1701,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/15"
     },
     {
       "id": 14,
       "date": "2026-03-08T02:32:47",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第五集05  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1610,14 +1720,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/14"
     },
     {
       "id": 13,
       "date": "2026-03-08T02:32:43",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第四集04  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1628,14 +1739,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/13"
     },
     {
       "id": 12,
       "date": "2026-03-08T02:32:38",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第三集03  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1646,14 +1758,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/12"
     },
     {
       "id": 11,
       "date": "2026-03-08T02:32:32",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第二集02  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1664,14 +1777,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/11"
     },
     {
       "id": 10,
       "date": "2026-03-08T02:32:26",
       "channel": "电视剧",
       "text": "《绝命毒师第二季》第一集01  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1682,7 +1796,8 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/10"
     },
     {
       "id": 9,
@@ -1692,14 +1807,15 @@
       "file": "",
       "mediaType": "",
       "links": [],
-      "category": "link"
+      "category": "link",
+      "telegramUrl": "https://t.me/c/3469051981/9"
     },
     {
       "id": 8,
       "date": "2026-03-08T02:30:14",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第七集07  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1710,14 +1826,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/8"
     },
     {
       "id": 7,
       "date": "2026-03-08T02:30:09",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第六集06  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1728,14 +1845,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/7"
     },
     {
       "id": 6,
       "date": "2026-03-08T02:30:03",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第五集05  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1746,14 +1864,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/6"
     },
     {
       "id": 5,
       "date": "2026-03-08T02:29:54",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第四集04  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1764,14 +1883,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/5"
     },
     {
       "id": 4,
       "date": "2026-03-08T02:29:49",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第三集03  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1782,14 +1902,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/4"
     },
     {
       "id": 3,
       "date": "2026-03-08T02:29:42",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第二集02  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1800,14 +1921,15 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/3"
     },
     {
       "id": 2,
       "date": "2026-03-08T02:29:35",
       "channel": "电视剧",
       "text": "《绝命毒师第一季》第一集01  #1080P   #绝命毒师   #美剧 \n\n 来这选择 🎞 电视剧      综艺      电影      动漫/日漫      英/美剧    日韩剧    网剧",
-      "file": "(File not included. Change data exporting settings to download.)",
+      "file": "(File exceeds maximum size. Change data exporting settings to download.)",
       "mediaType": "video_file",
       "links": [
         "https://t.me/luolimeimei/4294",
@@ -1818,7 +1940,8 @@
         "https://t.me/luolimeimei/4292",
         "https://t.me/luolimeimei/4293"
       ],
-      "category": "video"
+      "category": "video",
+      "telegramUrl": "https://t.me/c/3469051981/2"
     }
   ]
 }
