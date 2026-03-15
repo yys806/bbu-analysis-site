@@ -22,6 +22,7 @@ body {
   background: var(--bg);
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .ambient {
@@ -102,11 +103,12 @@ body {
   grid-template-columns: minmax(240px, 300px) 1fr;
   gap: clamp(20px, 4vw, 48px);
   padding: 20px clamp(24px, 6vw, 80px) 80px;
+  align-items: start;
 }
 
 .side-panel {
-  position: sticky;
-  top: 20px;
+  position: relative;
+  top: auto;
   align-self: start;
   display: flex;
   flex-direction: column;
@@ -349,6 +351,11 @@ body {
 
 .analysis li {
   margin-bottom: 6px;
+}
+
+.analysis {
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .copy-link {

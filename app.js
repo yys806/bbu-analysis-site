@@ -1,57 +1,6 @@
 const seriesConfig = [
-  {
-    id: "bb",
-    showId: 169,
-    title: "绝命毒师",
-    subtitle: "Breaking Bad",
-  },
-  {
-    id: "bcs",
-    showId: 618,
-    title: "风骚律师",
-    subtitle: "Better Call Saul",
-  },
-];
-
-const analysisTemplate = [
-  {
-    title: "剧情推进",
-    points: [
-      "本集叙事主线与结构节奏（起承转合）。",
-      "关键冲突的引爆与解决方式。",
-      "与上一集 / 下一集的承接关系。",
-    ],
-  },
-  {
-    title: "人物弧线",
-    points: [
-      "主角决策的动机与代价。",
-      "配角在本集的推动作用。",
-      "人物心理或价值观的变化。",
-    ],
-  },
-  {
-    title: "主题与象征",
-    points: [
-      "本集主题关键词与情感基调。",
-      "象征物或重复意象的出现。",
-      "与毒师宇宙整体主题的呼应。",
-    ],
-  },
-  {
-    title: "镜头语言",
-    points: [
-      "关键镜头构图、运动、景别如何服务叙事。",
-      "色彩、光影、声音对情绪的推动作用。",
-    ],
-  },
-  {
-    title: "宇宙联动",
-    points: [
-      "与另一部剧的互文 / 彩蛋。",
-      "角色关系或时间线的提示。",
-    ],
-  },
+  { id: "bb", title: "绝命毒师", subtitle: "Breaking Bad" },
+  { id: "bcs", title: "风骚律师", subtitle: "Better Call Saul" },
 ];
 
 const navRoot = document.getElementById("nav-root");
@@ -66,13 +15,6 @@ function episodeId(seriesId, season, episode) {
   return `${seriesId}-s${pad(season)}e${pad(episode)}`;
 }
 
-function stripHtml(html) {
-  return (html || "")
-    .replace(/<[^>]*>/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
 function groupBySeason(episodes) {
   const map = new Map();
   episodes.forEach((ep) => {
@@ -81,34 +23,18 @@ function groupBySeason(episodes) {
     }
     map.get(ep.season).push(ep);
   });
+
   return Array.from(map.entries())
     .sort((a, b) => a[0] - b[0])
-    .map(([season, items]) => ({
+    .map(([season, eps]) => ({
       season,
-      episodes: items.sort((a, b) => a.number - b.number),
+      episodes: eps.sort((a, b) => a.number - b.number),
     }));
 }
 
-async function loadSeriesEpisodes(series) {
-  const response = await fetch(`https://api.tvmaze.com/shows/${series.showId}/episodes`);
-  if (!response.ok) {
-    throw new Error(`${series.title} 数据拉取失败`);
-  }
-  const raw = await response.json();
-  return raw.map((item) => ({
-    season: item.season,
-    number: item.number,
-    title: item.name,
-    airDate: item.airdate,
-    image: item.image?.original || item.image?.medium || "",
-    detailUrl: item.url,
-    summary: stripHtml(item.summary),
-  }));
-}
-
 function renderCounts(seriesBlocks) {
-  const bbCount = seriesBlocks.find((s) => s.id === "bb")?.total || 0;
-  const bcsCount = seriesBlocks.find((s) => s.id === "bcs")?.total || 0;
+  const bbCount = seriesBlocks.find((item) => item.id === "bb")?.total || 0;
+  const bcsCount = seriesBlocks.find((item) => item.id === "bcs")?.total || 0;
   const total = bbCount + bcsCount;
 
   document.getElementById("bb-count").textContent = `${bbCount} 集`;
@@ -126,6 +52,7 @@ function renderNav(seriesBlocks) {
     series.seasons.forEach((seasonBlock) => {
       const details = document.createElement("details");
       details.open = seasonBlock.season === 1;
+
       const summary = document.createElement("summary");
       summary.textContent = `第 ${seasonBlock.season} 季`;
       details.appendChild(summary);
@@ -174,14 +101,10 @@ function renderSeries(seriesBlocks) {
 
         const imageHtml = ep.image
           ? `<img src="${ep.image}" alt="${ep.title} 剧照" loading="lazy" />`
-          : `
-            <div>
-              <strong>剧照暂缺</strong>
-              <p>该集暂未返回可用剧照，已保留解析结构。</p>
-            </div>
-          `;
+          : `<div><strong>剧照暂缺</strong><p>该集暂未返回可用剧照。</p></div>`;
 
-        const summaryText = ep.summary || "暂无官方简介，建议补充你自己的详细解析。";
+        const summaryZh = ep.summaryZh || "暂无中文简介";
+        const summaryEn = ep.summaryEn || "No English synopsis available.";
 
         card.innerHTML = `
           <header>
@@ -195,33 +118,24 @@ function renderSeries(seriesBlocks) {
           <div class="episode-meta">
             <span>剧集页：<a href="${ep.detailUrl}" target="_blank" rel="noreferrer">TVMaze</a></span>
             <span>百科：<a href="https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(ep.title + " " + series.subtitle)}" target="_blank" rel="noreferrer">Wikipedia 搜索</a></span>
-            <span>编号：S${pad(ep.season)}E${pad(ep.number)}</span>
-            <span>系列：${series.title}</span>
+            <span>播放源：<a href="${ep.playback.justwatch}" target="_blank" rel="noreferrer">JustWatch</a></span>
+            <span>备用播放：<a href="${ep.playback.youtube}" target="_blank" rel="noreferrer">YouTube 搜索</a></span>
           </div>
 
-          <div class="episode-shot">
-            ${imageHtml}
+          <div class="episode-shot">${imageHtml}</div>
+
+          <div class="analysis">
+            <div>
+              <h6>剧情介绍（中文）</h6>
+              <ul><li>${summaryZh}</li></ul>
+            </div>
+            <div>
+              <h6>Synopsis (English)</h6>
+              <ul><li>${summaryEn}</li></ul>
+            </div>
           </div>
         `;
 
-        const analysis = document.createElement("div");
-        analysis.className = "analysis";
-
-        const officialSummary = document.createElement("div");
-        officialSummary.innerHTML = `
-          <h6>官方剧情简介（来源：TVMaze）</h6>
-          <ul><li>${summaryText}</li></ul>
-        `;
-        analysis.appendChild(officialSummary);
-
-        analysisTemplate.forEach((block) => {
-          const segment = document.createElement("div");
-          const list = block.points.map((point) => `<li>${point}</li>`).join("");
-          segment.innerHTML = `<h6>${block.title}</h6><ul>${list}</ul>`;
-          analysis.appendChild(segment);
-        });
-
-        card.appendChild(analysis);
         seasonNode.appendChild(card);
       });
 
@@ -284,21 +198,25 @@ function renderError(message) {
 
 async function main() {
   try {
-    const loaded = await Promise.all(
-      seriesConfig.map(async (series) => {
-        const episodes = await loadSeriesEpisodes(series);
-        const seasons = groupBySeason(episodes);
-        return {
-          ...series,
-          seasons,
-          total: episodes.length,
-        };
-      })
-    );
+    const response = await fetch("episodes-data.json");
+    if (!response.ok) {
+      throw new Error("episodes-data.json 加载失败");
+    }
+    const payload = await response.json();
 
-    renderCounts(loaded);
-    renderNav(loaded);
-    renderSeries(loaded);
+    const seriesBlocks = seriesConfig.map((series) => {
+      const item = payload[series.id];
+      const episodes = item?.episodes || [];
+      return {
+        ...series,
+        seasons: groupBySeason(episodes),
+        total: episodes.length,
+      };
+    });
+
+    renderCounts(seriesBlocks);
+    renderNav(seriesBlocks);
+    renderSeries(seriesBlocks);
     bindCopyLinks();
     bindSearch();
     bindToTop();
