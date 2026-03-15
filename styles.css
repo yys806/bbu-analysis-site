@@ -300,6 +300,15 @@ body {
   margin: 12px 0 16px;
 }
 
+.episode-meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.episode-meta a:hover {
+  text-decoration: underline;
+}
+
 .episode-shot {
   border-radius: 14px;
   overflow: hidden;

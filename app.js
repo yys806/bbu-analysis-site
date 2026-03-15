@@ -1,15 +1,15 @@
-const seriesData = [
+const seriesConfig = [
   {
     id: "bb",
+    showId: 169,
     title: "绝命毒师",
     subtitle: "Breaking Bad",
-    seasons: [7, 13, 13, 13, 16],
   },
   {
     id: "bcs",
+    showId: 618,
     title: "风骚律师",
     subtitle: "Better Call Saul",
-    seasons: [10, 10, 10, 10, 10, 13],
   },
 ];
 
@@ -41,9 +41,8 @@ const analysisTemplate = [
   {
     title: "镜头语言",
     points: [
-      "本集值得截取的镜头 / 画面构图。",
-      "光影、色彩、声音的叙事作用。",
-      "导演风格的显著处理。",
+      "关键镜头构图、运动、景别如何服务叙事。",
+      "色彩、光影、声音对情绪的推动作用。",
     ],
   },
   {
@@ -59,20 +58,6 @@ const navRoot = document.getElementById("nav-root");
 const seriesRoot = document.getElementById("series-root");
 const searchInput = document.getElementById("episode-search");
 
-const totalCounts = seriesData.reduce(
-  (acc, series) => {
-    const count = series.seasons.reduce((sum, season) => sum + season, 0);
-    acc.total += count;
-    acc.bySeries[series.id] = count;
-    return acc;
-  },
-  { total: 0, bySeries: {} }
-);
-
-document.getElementById("bb-count").textContent = `${totalCounts.bySeries.bb} 集`;
-document.getElementById("bcs-count").textContent = `${totalCounts.bySeries.bcs} 集`;
-document.getElementById("total-count").textContent = `${totalCounts.total} 集`;
-
 function pad(num) {
   return String(num).padStart(2, "0");
 }
@@ -81,31 +66,78 @@ function episodeId(seriesId, season, episode) {
   return `${seriesId}-s${pad(season)}e${pad(episode)}`;
 }
 
-function expectedImagePath(seriesId, season, episode) {
-  return `assets/episodes/${seriesId}/s${pad(season)}e${pad(episode)}.jpg`;
+function stripHtml(html) {
+  return (html || "")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
-function renderNav() {
-  seriesData.forEach((series) => {
+function groupBySeason(episodes) {
+  const map = new Map();
+  episodes.forEach((ep) => {
+    if (!map.has(ep.season)) {
+      map.set(ep.season, []);
+    }
+    map.get(ep.season).push(ep);
+  });
+  return Array.from(map.entries())
+    .sort((a, b) => a[0] - b[0])
+    .map(([season, items]) => ({
+      season,
+      episodes: items.sort((a, b) => a.number - b.number),
+    }));
+}
+
+async function loadSeriesEpisodes(series) {
+  const response = await fetch(`https://api.tvmaze.com/shows/${series.showId}/episodes`);
+  if (!response.ok) {
+    throw new Error(`${series.title} 数据拉取失败`);
+  }
+  const raw = await response.json();
+  return raw.map((item) => ({
+    season: item.season,
+    number: item.number,
+    title: item.name,
+    airDate: item.airdate,
+    image: item.image?.original || item.image?.medium || "",
+    detailUrl: item.url,
+    summary: stripHtml(item.summary),
+  }));
+}
+
+function renderCounts(seriesBlocks) {
+  const bbCount = seriesBlocks.find((s) => s.id === "bb")?.total || 0;
+  const bcsCount = seriesBlocks.find((s) => s.id === "bcs")?.total || 0;
+  const total = bbCount + bcsCount;
+
+  document.getElementById("bb-count").textContent = `${bbCount} 集`;
+  document.getElementById("bcs-count").textContent = `${bcsCount} 集`;
+  document.getElementById("total-count").textContent = `${total} 集`;
+}
+
+function renderNav(seriesBlocks) {
+  navRoot.innerHTML = "";
+  seriesBlocks.forEach((series) => {
     const nav = document.createElement("div");
     nav.className = "nav-series";
     nav.innerHTML = `<h4>${series.title}</h4>`;
 
-    series.seasons.forEach((count, idx) => {
-      const seasonNo = idx + 1;
+    series.seasons.forEach((seasonBlock) => {
       const details = document.createElement("details");
-      details.open = seasonNo === 1;
+      details.open = seasonBlock.season === 1;
       const summary = document.createElement("summary");
-      summary.textContent = `第 ${seasonNo} 季`;
+      summary.textContent = `第 ${seasonBlock.season} 季`;
       details.appendChild(summary);
 
       const links = document.createElement("div");
-      for (let ep = 1; ep <= count; ep += 1) {
+      seasonBlock.episodes.forEach((ep) => {
         const anchor = document.createElement("a");
-        anchor.href = `#${episodeId(series.id, seasonNo, ep)}`;
-        anchor.textContent = `E${pad(ep)}`;
+        anchor.href = `#${episodeId(series.id, ep.season, ep.number)}`;
+        anchor.textContent = `E${pad(ep.number)}`;
         links.appendChild(anchor);
-      }
+      });
+
       details.appendChild(links);
       nav.appendChild(details);
     });
@@ -114,8 +146,10 @@ function renderNav() {
   });
 }
 
-function renderSeries() {
-  seriesData.forEach((series) => {
+function renderSeries(seriesBlocks) {
+  seriesRoot.innerHTML = "";
+
+  seriesBlocks.forEach((series) => {
     const section = document.createElement("section");
     section.className = "series";
     section.innerHTML = `
@@ -125,60 +159,73 @@ function renderSeries() {
       </div>
     `;
 
-    series.seasons.forEach((count, idx) => {
-      const seasonNo = idx + 1;
-      const seasonBlock = document.createElement("div");
-      seasonBlock.className = "season";
-      seasonBlock.innerHTML = `<h4>第 ${seasonNo} 季</h4>`;
+    series.seasons.forEach((seasonBlock) => {
+      const seasonNode = document.createElement("div");
+      seasonNode.className = "season";
+      seasonNode.innerHTML = `<h4>第 ${seasonBlock.season} 季</h4>`;
 
-      for (let ep = 1; ep <= count; ep += 1) {
-        const id = episodeId(series.id, seasonNo, ep);
+      seasonBlock.episodes.forEach((ep) => {
+        const id = episodeId(series.id, ep.season, ep.number);
         const card = document.createElement("article");
         card.className = "episode-card";
         card.id = id;
-        card.dataset.season = seasonNo;
-        card.dataset.episode = ep;
+        card.dataset.code = `s${pad(ep.season)}e${pad(ep.number)}`;
+        card.dataset.title = ep.title.toLowerCase();
 
-        const titleText = `S${pad(seasonNo)}E${pad(ep)} · 待补充标题`;
+        const imageHtml = ep.image
+          ? `<img src="${ep.image}" alt="${ep.title} 剧照" loading="lazy" />`
+          : `
+            <div>
+              <strong>剧照暂缺</strong>
+              <p>该集暂未返回可用剧照，已保留解析结构。</p>
+            </div>
+          `;
+
+        const summaryText = ep.summary || "暂无官方简介，建议补充你自己的详细解析。";
+
         card.innerHTML = `
           <header>
             <div>
-              <h5>${titleText}</h5>
-              <small>集号：${pad(ep)} · 请补充正式标题与播出信息</small>
+              <h5>S${pad(ep.season)}E${pad(ep.number)} · ${ep.title}</h5>
+              <small>首播日期：${ep.airDate || "未知"}</small>
             </div>
             <button class="copy-link" type="button" data-link="${id}">复制链接</button>
           </header>
+
           <div class="episode-meta">
-            <span>导演：待补充</span>
-            <span>编剧：待补充</span>
-            <span>播出日期：待补充</span>
-            <span>关键词：待补充</span>
+            <span>剧集页：<a href="${ep.detailUrl}" target="_blank" rel="noreferrer">TVMaze</a></span>
+            <span>百科：<a href="https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(ep.title + " " + series.subtitle)}" target="_blank" rel="noreferrer">Wikipedia 搜索</a></span>
+            <span>编号：S${pad(ep.season)}E${pad(ep.number)}</span>
+            <span>系列：${series.title}</span>
           </div>
-          <div class="episode-shot" data-path="${expectedImagePath(series.id, seasonNo, ep)}">
-            <div>
-              <strong>剧照待补充</strong>
-              <p>建议放置：${expectedImagePath(series.id, seasonNo, ep)}</p>
-            </div>
+
+          <div class="episode-shot">
+            ${imageHtml}
           </div>
         `;
 
         const analysis = document.createElement("div");
         analysis.className = "analysis";
+
+        const officialSummary = document.createElement("div");
+        officialSummary.innerHTML = `
+          <h6>官方剧情简介（来源：TVMaze）</h6>
+          <ul><li>${summaryText}</li></ul>
+        `;
+        analysis.appendChild(officialSummary);
+
         analysisTemplate.forEach((block) => {
           const segment = document.createElement("div");
           const list = block.points.map((point) => `<li>${point}</li>`).join("");
-          segment.innerHTML = `
-            <h6>${block.title}</h6>
-            <ul>${list}</ul>
-          `;
+          segment.innerHTML = `<h6>${block.title}</h6><ul>${list}</ul>`;
           analysis.appendChild(segment);
         });
+
         card.appendChild(analysis);
+        seasonNode.appendChild(card);
+      });
 
-        seasonBlock.appendChild(card);
-      }
-
-      section.appendChild(seasonBlock);
+      section.appendChild(seasonNode);
     });
 
     seriesRoot.appendChild(section);
@@ -208,8 +255,8 @@ function bindSearch() {
         card.style.display = "";
         return;
       }
-      const code = `s${pad(card.dataset.season)}e${pad(card.dataset.episode)}`;
-      card.style.display = code.includes(query) ? "" : "none";
+      const text = `${card.dataset.code} ${card.dataset.title}`;
+      card.style.display = text.includes(query) ? "" : "none";
     });
   });
 }
@@ -224,23 +271,40 @@ function bindToTop() {
   });
 }
 
-function hydrateImages() {
-  document.querySelectorAll(".episode-shot").forEach((shot) => {
-    const path = shot.dataset.path;
-    const img = new Image();
-    img.loading = "lazy";
-    img.alt = "剧照";
-    img.src = path;
-    img.addEventListener("load", () => {
-      shot.innerHTML = "";
-      shot.appendChild(img);
-    });
-  });
+function renderError(message) {
+  seriesRoot.innerHTML = `
+    <section class="series">
+      <div class="series-header">
+        <h3>数据加载失败</h3>
+        <span>${message}</span>
+      </div>
+    </section>
+  `;
 }
 
-renderNav();
-renderSeries();
-bindCopyLinks();
-bindSearch();
-bindToTop();
-hydrateImages();
+async function main() {
+  try {
+    const loaded = await Promise.all(
+      seriesConfig.map(async (series) => {
+        const episodes = await loadSeriesEpisodes(series);
+        const seasons = groupBySeason(episodes);
+        return {
+          ...series,
+          seasons,
+          total: episodes.length,
+        };
+      })
+    );
+
+    renderCounts(loaded);
+    renderNav(loaded);
+    renderSeries(loaded);
+    bindCopyLinks();
+    bindSearch();
+    bindToTop();
+  } catch (error) {
+    renderError(error instanceof Error ? error.message : "未知错误");
+  }
+}
+
+main();
