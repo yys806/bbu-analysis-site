@@ -334,6 +334,15 @@ body {
   cursor: pointer;
 }
 
+.episode-meta a.tg-button {
+  color: #fff;
+}
+
+.episode-meta a.tg-button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .tg-button[disabled] {
   background: #9aa39d;
   color: #f1f1f1;

@@ -60,7 +60,7 @@ function buildTelegramEpisodeMap(payload) {
       return;
     }
 
-    const m = text.match(/第\s*([0-9一二三四五六七八九十两]+)\s*季\s*第\s*([0-9一二三四五六七八九十两]+)\s*集/);
+    const m = text.match(/(?:第)?\s*([0-9一二三四五六七八九十两]+)\s*季\s*(?:第)?\s*([0-9一二三四五六七八九十两]+)\s*集/);
     if (!m) {
       return;
     }
