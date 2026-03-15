@@ -128,6 +128,31 @@ function toResourceItem(message, channelName) {
   };
 }
 
+function collectMessageBundles(parsed) {
+  const bundles = [];
+
+  if (Array.isArray(parsed.messages)) {
+    bundles.push({
+      channel: parsed.name || "Telegram 导出",
+      messages: parsed.messages,
+    });
+  }
+
+  const chatList = parsed?.chats?.list;
+  if (Array.isArray(chatList)) {
+    chatList.forEach((chat) => {
+      if (Array.isArray(chat?.messages)) {
+        bundles.push({
+          channel: chat.name || "频道/群组",
+          messages: chat.messages,
+        });
+      }
+    });
+  }
+
+  return bundles;
+}
+
 async function resolveInputFile(inputPath) {
   if (!inputPath) {
     return "";
@@ -182,20 +207,21 @@ async function main() {
 
   const raw = await readFile(filePath, "utf8");
   const parsed = JSON.parse(raw);
-  const channelName = parsed.name || "Telegram 频道";
-  const messages = Array.isArray(parsed.messages) ? parsed.messages : [];
-
+  const bundles = collectMessageBundles(parsed);
   const resources = dedupe(
-    messages
-      .filter((msg) => msg && msg.type === "message")
-      .map((msg) => toResourceItem(msg, channelName))
-      .filter(Boolean)
+    bundles
+      .flatMap((bundle) =>
+        bundle.messages
+          .filter((msg) => msg && msg.type === "message")
+          .map((msg) => toResourceItem(msg, bundle.channel))
+          .filter(Boolean)
+      )
   );
 
   const payload = {
     generatedAt: new Date().toISOString(),
     source: filePath,
-    channel: channelName,
+    channel: parsed?.name || "Telegram 导出",
     total: resources.length,
     items: resources,
   };
