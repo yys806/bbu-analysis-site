@@ -1,0 +1,627 @@
+{
+  "bb-1-1": {
+    "rating": 9,
+    "votes": "53641",
+    "title": "Pilot"
+  },
+  "bb-1-2": {
+    "rating": 8.6,
+    "votes": "34642",
+    "title": "Cat's in the Bag..."
+  },
+  "bb-1-3": {
+    "rating": 8.7,
+    "votes": "37027",
+    "title": "...And the Bag's in the River"
+  },
+  "bb-1-4": {
+    "rating": 8.2,
+    "votes": "32269",
+    "title": "Cancer Man"
+  },
+  "bb-1-5": {
+    "rating": 8.3,
+    "votes": "34792",
+    "title": "Gray Matter"
+  },
+  "bb-1-6": {
+    "rating": 9.3,
+    "votes": "37836",
+    "title": "Crazy Handful of Nothin'"
+  },
+  "bb-1-7": {
+    "rating": 8.8,
+    "votes": "32899",
+    "title": "A No-Rough-Stuff-Type Deal"
+  },
+  "bb-2-1": {
+    "rating": 8.6,
+    "votes": "29306",
+    "title": "Seven Thirty-Seven"
+  },
+  "bb-2-2": {
+    "rating": 9.3,
+    "votes": "42829",
+    "title": "Grilled"
+  },
+  "bb-2-3": {
+    "rating": 8.3,
+    "votes": "32218",
+    "title": "Bit by a Dead Bee"
+  },
+  "bb-2-4": {
+    "rating": 8.2,
+    "votes": "28548",
+    "title": "Down"
+  },
+  "bb-2-5": {
+    "rating": 8.2,
+    "votes": "35692",
+    "title": "Breakage"
+  },
+  "bb-2-6": {
+    "rating": 8.8,
+    "votes": "37258",
+    "title": "Peekaboo"
+  },
+  "bb-2-7": {
+    "rating": 8.6,
+    "votes": "28387",
+    "title": "Negro y Azul"
+  },
+  "bb-2-8": {
+    "rating": 9.2,
+    "votes": "34081",
+    "title": "Better Call Saul"
+  },
+  "bb-2-9": {
+    "rating": 9.2,
+    "votes": "38226",
+    "title": "4 Days Out"
+  },
+  "bb-2-10": {
+    "rating": 8.4,
+    "votes": "27028",
+    "title": "Over"
+  },
+  "bb-2-11": {
+    "rating": 8.9,
+    "votes": "31200",
+    "title": "Mandala"
+  },
+  "bb-2-12": {
+    "rating": 9.3,
+    "votes": "35305",
+    "title": "Phoenix"
+  },
+  "bb-2-13": {
+    "rating": 9.3,
+    "votes": "38644",
+    "title": "ABQ"
+  },
+  "bb-3-1": {
+    "rating": 8.5,
+    "votes": "26627",
+    "title": "No Más"
+  },
+  "bb-3-2": {
+    "rating": 8.6,
+    "votes": "28447",
+    "title": "Caballo sin Nombre"
+  },
+  "bb-3-3": {
+    "rating": 8.4,
+    "votes": "30519",
+    "title": "I.F.T."
+  },
+  "bb-3-4": {
+    "rating": 8.2,
+    "votes": "28249",
+    "title": "Green Light"
+  },
+  "bb-3-5": {
+    "rating": null,
+    "votes": "29851",
+    "title": "Más"
+  },
+  "bb-3-6": {
+    "rating": 9.3,
+    "votes": "40170",
+    "title": "Sunset"
+  },
+  "bb-3-7": {
+    "rating": 9.6,
+    "votes": "35816",
+    "title": "One Minute"
+  },
+  "bb-3-8": {
+    "rating": 8.7,
+    "votes": "30800",
+    "title": "I See You"
+  },
+  "bb-3-9": {
+    "rating": 8.4,
+    "votes": "30034",
+    "title": "Kafkaesque"
+  },
+  "bb-3-10": {
+    "rating": 7.9,
+    "votes": "46630",
+    "title": "Fly"
+  },
+  "bb-3-11": {
+    "rating": 8.4,
+    "votes": "27746",
+    "title": "Abiquiu"
+  },
+  "bb-3-12": {
+    "rating": null,
+    "votes": "35040",
+    "title": "Half Measures"
+  },
+  "bb-3-13": {
+    "rating": 9.7,
+    "votes": "40224",
+    "title": "Full Measure"
+  },
+  "bb-4-1": {
+    "rating": 9.2,
+    "votes": "32067",
+    "title": "Box Cutter"
+  },
+  "bb-4-2": {
+    "rating": 8.2,
+    "votes": "28417",
+    "title": "Thirty-Eight Snub"
+  },
+  "bb-4-3": {
+    "rating": 7.9,
+    "votes": "39641",
+    "title": "Open House"
+  },
+  "bb-4-4": {
+    "rating": 8.5,
+    "votes": "24899",
+    "title": "Bullet Points"
+  },
+  "bb-4-5": {
+    "rating": null,
+    "votes": "25341",
+    "title": "Shotgun"
+  },
+  "bb-4-6": {
+    "rating": null,
+    "votes": "27762",
+    "title": "Cornered"
+  },
+  "bb-4-7": {
+    "rating": 8.8,
+    "votes": "26436",
+    "title": "Problem Dog"
+  },
+  "bb-4-8": {
+    "rating": 9.3,
+    "votes": "29470",
+    "title": "Hermanos"
+  },
+  "bb-4-9": {
+    "rating": 8.9,
+    "votes": "26905",
+    "title": "Bug"
+  },
+  "bb-4-10": {
+    "rating": null,
+    "votes": "37041",
+    "title": "Salud"
+  },
+  "bb-4-11": {
+    "rating": null,
+    "votes": "54650",
+    "title": "Crawl Space"
+  },
+  "bb-4-12": {
+    "rating": 9.5,
+    "votes": "33410",
+    "title": "End Times"
+  },
+  "bb-4-13": {
+    "rating": 9.9,
+    "votes": "80320",
+    "title": "Face Off"
+  },
+  "bb-5-1": {
+    "rating": 9.2,
+    "votes": "35400",
+    "title": "Live Free or Die"
+  },
+  "bb-5-2": {
+    "rating": null,
+    "votes": "30562",
+    "title": "Madrigal"
+  },
+  "bb-5-3": {
+    "rating": 8.8,
+    "votes": "35084",
+    "title": "Hazard Pay"
+  },
+  "bb-5-4": {
+    "rating": 8.8,
+    "votes": "30123",
+    "title": "Fifty-One"
+  },
+  "bb-5-5": {
+    "rating": 9.7,
+    "votes": "49079",
+    "title": "Dead Freight"
+  },
+  "bb-5-6": {
+    "rating": 9,
+    "votes": "36057",
+    "title": "Buyout"
+  },
+  "bb-5-7": {
+    "rating": 9.6,
+    "votes": "40500",
+    "title": "Say My Name"
+  },
+  "bb-5-8": {
+    "rating": 9.6,
+    "votes": "38819",
+    "title": "Gliding Over All"
+  },
+  "bb-5-9": {
+    "rating": 9.4,
+    "votes": "36755",
+    "title": "Blood Money"
+  },
+  "bb-5-10": {
+    "rating": 9.2,
+    "votes": "36814",
+    "title": "Buried"
+  },
+  "bb-5-11": {
+    "rating": 9.6,
+    "votes": "43706",
+    "title": "Confessions"
+  },
+  "bb-5-12": {
+    "rating": 9.1,
+    "votes": "37624",
+    "title": "Rabid Dog"
+  },
+  "bb-5-13": {
+    "rating": 9.8,
+    "votes": "63707",
+    "title": "To'hajiilee"
+  },
+  "bb-5-14": {
+    "rating": 10,
+    "votes": "251146",
+    "title": "Ozymandias"
+  },
+  "bb-5-15": {
+    "rating": 9.7,
+    "votes": "63259",
+    "title": "Granite State"
+  },
+  "bb-5-16": {
+    "rating": 9.9,
+    "votes": "160283",
+    "title": "Felina"
+  },
+  "bcs-1-1": {
+    "rating": 8.4,
+    "votes": "24479",
+    "title": "Uno"
+  },
+  "bcs-1-2": {
+    "rating": 8.9,
+    "votes": "23870",
+    "title": "Mijo"
+  },
+  "bcs-1-3": {
+    "rating": 8.6,
+    "votes": "23101",
+    "title": "Nacho"
+  },
+  "bcs-1-4": {
+    "rating": 8.4,
+    "votes": "18342",
+    "title": "Hero"
+  },
+  "bcs-1-5": {
+    "rating": 8,
+    "votes": "17822",
+    "title": "Alpine Shepherd Boy"
+  },
+  "bcs-1-6": {
+    "rating": 9.4,
+    "votes": "27649",
+    "title": "Five-O"
+  },
+  "bcs-1-7": {
+    "rating": 8.6,
+    "votes": "17092",
+    "title": "Bingo"
+  },
+  "bcs-1-8": {
+    "rating": 8.6,
+    "votes": "20391",
+    "title": "RICO"
+  },
+  "bcs-1-9": {
+    "rating": 9.4,
+    "votes": "22324",
+    "title": "Pimento"
+  },
+  "bcs-1-10": {
+    "rating": 8.6,
+    "votes": "21519",
+    "title": "Marco"
+  },
+  "bcs-2-1": {
+    "rating": 8.2,
+    "votes": "15423",
+    "title": "Switch"
+  },
+  "bcs-2-2": {
+    "rating": 8.4,
+    "votes": "15732",
+    "title": "Cobbler"
+  },
+  "bcs-2-3": {
+    "rating": 8.2,
+    "votes": "13828",
+    "title": "Amarillo"
+  },
+  "bcs-2-4": {
+    "rating": 8.9,
+    "votes": "17700",
+    "title": "Gloves Off"
+  },
+  "bcs-2-5": {
+    "rating": 7.9,
+    "votes": "13970",
+    "title": "Rebecca"
+  },
+  "bcs-2-6": {
+    "rating": null,
+    "votes": "13618",
+    "title": "Bali Ha'i"
+  },
+  "bcs-2-7": {
+    "rating": 8.3,
+    "votes": "13273",
+    "title": "Inflatable"
+  },
+  "bcs-2-8": {
+    "rating": 8.3,
+    "votes": "14477",
+    "title": "Fifi"
+  },
+  "bcs-2-9": {
+    "rating": 9.3,
+    "votes": "19771",
+    "title": "Nailed"
+  },
+  "bcs-2-10": {
+    "rating": 9,
+    "votes": "15113",
+    "title": "Klick"
+  },
+  "bcs-3-1": {
+    "rating": 8.1,
+    "votes": "14099",
+    "title": "Mabel"
+  },
+  "bcs-3-2": {
+    "rating": 9,
+    "votes": "14961",
+    "title": "Witness"
+  },
+  "bcs-3-3": {
+    "rating": 8.4,
+    "votes": "13363",
+    "title": "Sunk Costs"
+  },
+  "bcs-3-4": {
+    "rating": 8.9,
+    "votes": "14392",
+    "title": "Sabrosito"
+  },
+  "bcs-3-5": {
+    "rating": 9.7,
+    "votes": "30021",
+    "title": "Chicanery"
+  },
+  "bcs-3-6": {
+    "rating": 8.4,
+    "votes": "13119",
+    "title": "Off Brand"
+  },
+  "bcs-3-7": {
+    "rating": 8.2,
+    "votes": "12859",
+    "title": "Expenses"
+  },
+  "bcs-3-8": {
+    "rating": 8.5,
+    "votes": "13592",
+    "title": "Slip"
+  },
+  "bcs-3-9": {
+    "rating": 8.8,
+    "votes": "13166",
+    "title": "Fall"
+  },
+  "bcs-3-10": {
+    "rating": 9.2,
+    "votes": "16633",
+    "title": "Lantern"
+  },
+  "bcs-4-1": {
+    "rating": null,
+    "votes": "13881",
+    "title": "Smoke"
+  },
+  "bcs-4-2": {
+    "rating": 8.8,
+    "votes": "14823",
+    "title": "Breathe"
+  },
+  "bcs-4-3": {
+    "rating": 8.4,
+    "votes": "12511",
+    "title": "Something Beautiful"
+  },
+  "bcs-4-4": {
+    "rating": 8.2,
+    "votes": "12465",
+    "title": "Talk"
+  },
+  "bcs-4-5": {
+    "rating": 8.5,
+    "votes": "12460",
+    "title": "Quite a Ride"
+  },
+  "bcs-4-6": {
+    "rating": 8.5,
+    "votes": "12522",
+    "title": "Piñata"
+  },
+  "bcs-4-7": {
+    "rating": 8.3,
+    "votes": "12354",
+    "title": "Something Stupid"
+  },
+  "bcs-4-8": {
+    "rating": 8.8,
+    "votes": "14591",
+    "title": "Coushatta"
+  },
+  "bcs-4-9": {
+    "rating": 9.1,
+    "votes": "13931",
+    "title": "Wiedersehen"
+  },
+  "bcs-4-10": {
+    "rating": 9.5,
+    "votes": "20258",
+    "title": "Winner"
+  },
+  "bcs-5-1": {
+    "rating": 8.7,
+    "votes": "15269",
+    "title": "Magic Man"
+  },
+  "bcs-5-2": {
+    "rating": 8.7,
+    "votes": "14358",
+    "title": "50% Off"
+  },
+  "bcs-5-3": {
+    "rating": 9,
+    "votes": "15355",
+    "title": "The Guy for This"
+  },
+  "bcs-5-4": {
+    "rating": 8.5,
+    "votes": "13567",
+    "title": "Namaste"
+  },
+  "bcs-5-5": {
+    "rating": 8.5,
+    "votes": "15933",
+    "title": "Dedicado a Max"
+  },
+  "bcs-5-6": {
+    "rating": 9.3,
+    "votes": "17658",
+    "title": "Wexler v. Goodman"
+  },
+  "bcs-5-7": {
+    "rating": 9.1,
+    "votes": "17467",
+    "title": "JMM"
+  },
+  "bcs-5-8": {
+    "rating": 9.7,
+    "votes": "28607",
+    "title": "Bagman"
+  },
+  "bcs-5-9": {
+    "rating": 9.7,
+    "votes": "30135",
+    "title": "Bad Choice Road"
+  },
+  "bcs-5-10": {
+    "rating": 9.4,
+    "votes": "20841",
+    "title": "Something Unforgivable"
+  },
+  "bcs-6-1": {
+    "rating": 8.7,
+    "votes": "21229",
+    "title": "Wine and Roses"
+  },
+  "bcs-6-2": {
+    "rating": 9.1,
+    "votes": "21816",
+    "title": "Carrot and Stick"
+  },
+  "bcs-6-3": {
+    "rating": 9.7,
+    "votes": "35269",
+    "title": "Rock and Hard Place"
+  },
+  "bcs-6-4": {
+    "rating": 8.6,
+    "votes": "22815",
+    "title": "Hit and Run"
+  },
+  "bcs-6-5": {
+    "rating": 8.1,
+    "votes": "18749",
+    "title": "Black and Blue"
+  },
+  "bcs-6-6": {
+    "rating": 8.2,
+    "votes": "19357",
+    "title": "Axe and Grind"
+  },
+  "bcs-6-7": {
+    "rating": 9.9,
+    "votes": "60036",
+    "title": "Plan and Execution"
+  },
+  "bcs-6-8": {
+    "rating": 9.8,
+    "votes": "41409",
+    "title": "Point and Shoot"
+  },
+  "bcs-6-9": {
+    "rating": 9.4,
+    "votes": "27430",
+    "title": "Fun and Games"
+  },
+  "bcs-6-10": {
+    "rating": 8.5,
+    "votes": "25633",
+    "title": "Nippy"
+  },
+  "bcs-6-11": {
+    "rating": 9,
+    "votes": "29413",
+    "title": "Breaking Bad"
+  },
+  "bcs-6-12": {
+    "rating": 9.4,
+    "votes": "29739",
+    "title": "Waterworks"
+  },
+  "bcs-6-13": {
+    "rating": 9.8,
+    "votes": "59117",
+    "title": "Saul Gone"
+  }
+}
