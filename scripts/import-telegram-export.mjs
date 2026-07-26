@@ -247,7 +247,8 @@ async function main() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: filePath,
+    // 只记录文件名,避免把本机绝对路径写进公开数据文件
+    source: path.basename(filePath),
     channel: parsed?.name || "Telegram 导出",
     chatId: parsed?.id || 0,
     username: parsed?.username || "",
