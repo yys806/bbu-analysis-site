@@ -11,6 +11,15 @@ function pad(num) {
   return String(num).padStart(2, "0");
 }
 
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
 function episodeId(seriesId, season, episode) {
   return `${seriesId}-s${pad(season)}e${pad(episode)}`;
 }
@@ -112,7 +121,7 @@ function renderNav(seriesBlocks) {
   seriesBlocks.forEach((series) => {
     const nav = document.createElement("div");
     nav.className = "nav-series";
-    nav.innerHTML = `<h4>${series.title}</h4>`;
+    nav.innerHTML = `<h4>${escapeHtml(series.title)}</h4>`;
 
     series.seasons.forEach((seasonBlock) => {
       const details = document.createElement("details");
@@ -146,8 +155,8 @@ function renderSeries(seriesBlocks, telegramEpisodeMap) {
     section.className = "series";
     section.innerHTML = `
       <div class="series-header">
-        <h3>${series.title}</h3>
-        <span>${series.subtitle}</span>
+        <h3>${escapeHtml(series.title)}</h3>
+        <span>${escapeHtml(series.subtitle)}</span>
       </div>
     `;
 
@@ -165,30 +174,30 @@ function renderSeries(seriesBlocks, telegramEpisodeMap) {
         card.dataset.title = ep.title.toLowerCase();
 
         const imageHtml = ep.image
-          ? `<img src="${ep.image}" alt="${ep.title} 剧照" loading="lazy" />`
+          ? `<img src="${escapeHtml(ep.image)}" alt="${escapeHtml(ep.title)} 剧照" loading="lazy" />`
           : `<div><strong>剧照暂缺</strong><p>该集暂未返回可用剧照。</p></div>`;
 
-        const summaryZh = ep.summaryZh || "暂无中文简介";
-        const summaryEn = ep.summaryEn || "No English synopsis available.";
+        const summaryZh = escapeHtml(ep.summaryZh) || "暂无中文简介";
+        const summaryEn = escapeHtml(ep.summaryEn) || "No English synopsis available.";
         const tgKey = `${series.id}-${ep.season}-${ep.number}`;
         const tgUrl = telegramEpisodeMap.get(tgKey) || "";
         const ratingText = ep.imdbRating == null ? "暂无" : ep.imdbRating.toFixed(1);
         const votesText = ep.imdbVotes || "-";
         const tgButton = tgUrl
-          ? `<a class="tg-button" href="${tgUrl}" target="_blank" rel="noreferrer">跳转 Telegram 视频</a>`
+          ? `<a class="tg-button" href="${escapeHtml(tgUrl)}" target="_blank" rel="noreferrer">跳转 Telegram 视频</a>`
           : `<button class="tg-button" type="button" disabled>暂无 Telegram 视频</button>`;
 
         card.innerHTML = `
           <header>
             <div>
-              <h5>S${pad(ep.season)}E${pad(ep.number)} · ${ep.title}</h5>
-              <small>首播日期：${ep.airDate || "未知"}</small>
+              <h5>S${pad(ep.season)}E${pad(ep.number)} · ${escapeHtml(ep.title)}</h5>
+              <small>首播日期：${escapeHtml(ep.airDate) || "未知"}</small>
             </div>
             <button class="copy-link" type="button" data-link="${id}">复制链接</button>
           </header>
 
           <div class="episode-meta">
-            <span class="rating-pill">IMDb：${ratingText} · ${votesText}票</span>
+            <span class="rating-pill">IMDb：${escapeHtml(ratingText)} · ${escapeHtml(votesText)}票</span>
             <span>${tgButton}</span>
           </div>
 
@@ -260,7 +269,7 @@ function renderError(message) {
     <section class="series">
       <div class="series-header">
         <h3>数据加载失败</h3>
-        <span>${message}</span>
+        <span>${escapeHtml(message)}</span>
       </div>
     </section>
   `;
